@@ -2,19 +2,39 @@
 recien pude hacerlo funcionar cuando cambie todos los LET por VAR.... 
 error de principiante*/
 
-alert(    "Entrega 01 - Calculador de IVA simplificado"   )
-var proceed = confirm("Vas a pagar el IVA sobre tu producto?");
+function Alumno(){
+    alert(    "Entrega 01 - Calculador de IVA simplificado"   );
+}
+Alumno();
+
+
+let proceed = confirm("Vas a pagar el IVA sobre tu producto?");
+
 if (proceed) {
     var  precio = parseInt (prompt ("Ingresar el monto de tu producto"));
     var  cuotas = parseInt (prompt ("indica cantidad de cuotas"));
-    var calculadora  = precio / cuotas*1.21
+    var iva = 1.21
+    var calculadora  = precio / cuotas * iva
     } 
+
 else {
     var  precio = parseInt (prompt ("Ingresar el monto de tu productoo"));
-    var  cuotas = parseInt (prompt ("indica cantidad de cuotass"));
+    var  cuotas = parseInt (prompt ("indica cantidad de cuotass"));;
     var calculadora  = precio/cuotas
 }
 
-alert(calculadora)
+alert(calculadora);
 console.log(calculadora);
-alert(    "Ignacio Casco - Comisión 30335 - Javascript"  )
+
+function Adios(){
+    alert(    "chau!"   );
+}
+
+Adios();
+
+
+
+
+
+
+
